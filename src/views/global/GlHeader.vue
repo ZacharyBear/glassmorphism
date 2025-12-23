@@ -77,13 +77,48 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid @primary-color;
     padding: 0 20px;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 2;
     transition: @transition-eased2s;
+
+    &::before {
+        z-index: -1;
+        content: '';
+        position: absolute;
+        inset: 0;
+        bottom: -20%;
+        background: transparent;
+        transition: all 0.5s ease;
+        backdrop-filter: blur(16px);
+        mask-image: linear-gradient(
+            to bottom,
+            white,
+            fade(black, 20%) 80%,
+            transparent
+        ); // 可以渐变隐藏元素
+    }
+    &:hover {
+        nav {
+            .gl-menu,
+            .gl-sub-menu {
+                background: rgba(255, 255, 255, 0.6);
+                &:hover {
+                    background: white;
+                    color: @primary-color;
+                }
+                &:active {
+                    background: rgba(255, 255, 255, 0.6);
+                }
+            }
+        }
+
+        &::before {
+            background: rgba(83, 82, 237, 0.5);
+        }
+    }
 
     #logo {
         &:focus {
@@ -138,24 +173,6 @@ header {
                         color: @font-color;
                         background: white;
                     }
-                }
-            }
-        }
-    }
-    &:hover {
-        backdrop-filter: @default-filter brightness(0.8) saturate(0.3);
-        background: rgba(83, 82, 237, 0.5);
-        border: none;
-        nav {
-            .gl-menu,
-            .gl-sub-menu {
-                background: rgba(255, 255, 255, 0.6);
-                &:hover {
-                    background: white;
-                    color: @primary-color;
-                }
-                &:active {
-                    background: rgba(255, 255, 255, 0.6);
                 }
             }
         }
