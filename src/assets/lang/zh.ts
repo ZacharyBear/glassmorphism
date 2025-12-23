@@ -54,14 +54,14 @@ export default {
         how: {
             title: 'Glassmorphism Generator 怎么来的?',
             content:
-                '我想过创建一个工具，用来帮助我自己和大家快速生成<a href="https://cloud.tencent.com/developer/article/2063261">玻璃拟态</a> 样式的代码。现在它来了。',
+                '我想过创建一个工具，用来帮助我自己和大家快速生成<a href="https://cloud.tencent.com/developer/article/2063261">玻璃拟态</a> 样式的代码。现在它来了！',
         },
         thanks: {
             title: '特别鸣谢',
             jobs: {
                 translate: '翻译',
             },
-            tips: '提示: 如果你的这些信息有变化，请联系Zenkie Bear，也可以提交PR请求！ : )',
+            tips: '提示: 如果你的这些信息有变化，请联系Zachary Bear，也可以提交PR请求！ : )',
         },
         contact: {
             title: '联系方式',

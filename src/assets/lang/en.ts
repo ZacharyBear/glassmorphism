@@ -54,14 +54,14 @@ export default {
         how: {
             title: 'How was Glassmorphism Generator cames?',
             content:
-                'I wanted a tool to help myself and others to generate <a href="https://webflow.com/blog/glassmorphism">glassmorphism</a> style codes. And it comes now.',
+                'I wanted a tool to help myself and others to generate <a href="https://webflow.com/blog/glassmorphism">glassmorphism</a> style codes. And it comes now!',
         },
         thanks: {
             title: 'Special Thanks',
             jobs: {
                 translate: 'Translate',
             },
-            tips: 'Tips: If your infomation changed, please contact Zenkie Bear. You can also push Pull Request. : )',
+            tips: 'Tips: If your infomation changed, please contact Zachary Bear. You can also push Pull Request. : )',
         },
         contact: {
             title: 'Contact',

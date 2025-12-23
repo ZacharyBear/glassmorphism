@@ -38,7 +38,7 @@
                 </template>
             </gg-sub-menu>
             <a
-                href="https://github.com/ZenkieBear/glassmorphism"
+                href="https://github.com/ZacharyBear/glassmorphism"
                 class="gl-menu"
                 tabindex="5"
             >

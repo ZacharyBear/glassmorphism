@@ -1,12 +1,12 @@
 <div align="center">
   <a href="https://glass.zenkie.cn/">
-    <img src="https://raw.githubusercontent.com/ZenkieBear/glassmorphism/main/public/logo.png" style="width: 100px; border-radius: 5px" />
+    <img src="https://raw.githubusercontent.com/ZacharyBear/glassmorphism/main/public/logo.png" style="width: 100px; border-radius: 5px" />
   </a>
 </div>
 
 # Glassmorphism Generator
 
-[![ci](https://github.com/ZenkieBear/glassmorphism/actions/workflows/node.js.yml/badge.svg)](https://github.com/ZenkieBear/glassmorphism/actions/workflows/node.js.yml)
+[![ci](https://github.com/ZacharyBear/glassmorphism/actions/workflows/node.js.yml/badge.svg)](https://github.com/ZacharyBear/glassmorphism/actions/workflows/node.js.yml)
 
 中文文档[在这里](README-zh.md)
 
@@ -47,4 +47,4 @@ After you run this, you'll see a new folder called dist. You need to package thi
 
 ## License
 
-The Glassmorphism Generator is free to use because it's licensed under [MIT](https://github.com/ZenkieBear/glassmorphism/blob/main/LICENSE)
+The Glassmorphism Generator is free to use because it's licensed under [MIT](https://github.com/ZacharyBear/glassmorphism/blob/main/LICENSE)

@@ -1,12 +1,12 @@
 <div align="center">
   <a href="https://glass.zenkie.cn/">
-    <img src="https://raw.githubusercontent.com/ZenkieBear/glassmorphism/main/public/logo.png" style="width: 100px; border-radius: 5px" />
+    <img src="https://raw.githubusercontent.com/ZacharyBear/glassmorphism/main/public/logo.png" style="width: 100px; border-radius: 5px" />
   </a>
 </div>
 
 # Glassmorphism Generator
 
-[![ci](https://github.com/ZenkieBear/glassmorphism/actions/workflows/node.js.yml/badge.svg)](https://github.com/ZenkieBear/glassmorphism/actions/workflows/node.js.yml)
+[![ci](https://github.com/ZacharyBear/glassmorphism/actions/workflows/node.js.yml/badge.svg)](https://github.com/ZacharyBear/glassmorphism/actions/workflows/node.js.yml)
 
 这是一个 **玻璃拟态** `CSS` 生成器，用于帮助设计师、前端开发者来快速设计组件。
 
@@ -38,4 +38,4 @@ Tips: 将会有一个名为`dist`的目录生成，将它压缩成包并放入�
 
 ## 证书
 
-`Glassmorphism Generator`采用[MIT](https://github.com/ZenkieBear/glassmorphism/blob/main/LICENSE)作为开源许可证。
+`Glassmorphism Generator`采用[MIT](https://github.com/ZacharyBear/glassmorphism/blob/main/LICENSE)作为开源许可证。

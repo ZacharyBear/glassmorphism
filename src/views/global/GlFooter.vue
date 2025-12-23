@@ -4,7 +4,7 @@
             <span>
                 {{ $t('footer.star.prefix') }}
                 <a
-                    href="https://github.com/ZenkieBear/glassmorphism"
+                    href="https://github.com/ZacharyBear/glassmorphism"
                     class="link"
                 >
                     <i class="fa-brands fa-github"></i>
@@ -15,14 +15,16 @@
         <div class="copyright">
             {{ $t('footer.license.prefix') }}
             <a
-                href="https://github.com/ZenkieBear/glassmorphism/blob/main/LICENSE'"
+                href="https://github.com/ZacharyBear/glassmorphism/blob/main/LICENSE'"
                 class="link"
                 >MIT</a
             >
             {{ $t('footer.license.suffix') }}
             |
             {{ $t('footer.copyPrefix', { year }) }}
-            <a href="https://github.com/ZenkieBear" class="link">Zenkie Bear</a>
+            <a href="https://github.com/ZacharyBear" class="link"
+                >Zachary Bear</a
+            >
             .
         </div>
     </footer>

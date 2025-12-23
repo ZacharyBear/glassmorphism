@@ -76,7 +76,7 @@ const contributors = reactive<Array<Contributor>>([
 ]);
 const contacts = reactive({
     email: 'zq@zenkie.cn',
-    wechat: 'zenkiebear',
+    wechat: 'ZenkieBear',
 });
 </script>
 
