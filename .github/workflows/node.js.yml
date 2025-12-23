@@ -25,7 +25,7 @@ jobs:
     #     - name: Checkout 🛎️
     #       uses: actions/checkout@v4
     #     - name: Linting
-    #       uses: actions/setup-node@v3
+    #       uses: actions/setup-node@v4
     #       with: ${{ matrix.node-version }}
     #     - run: npm install
     #     - run: npm run lint
@@ -44,7 +44,7 @@ jobs:
             - name: 🛎️ Checkout
               uses: actions/checkout@v4
             - name: 🚧 Build with Node.js ${{ matrix.node-version }}
-              uses: actions/setup-node@v3
+              uses: actions/setup-node@v4
               with:
                   node-version: ${{ matrix.node-version }}
                   cache: 'npm'
@@ -53,7 +53,7 @@ jobs:
             # Avoid fresh page 404 result
             - run: cp dist/index.html dist/404.html
             - name: 🚀 Deploying
-              uses: actions/configure-pages@v3
+              uses: actions/configure-pages@v4
             - uses: actions/upload-pages-artifact@v2
               with:
                   path: './dist'
