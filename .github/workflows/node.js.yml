@@ -5,8 +5,7 @@ name: CI GitHub Pages
 on:
     push:
         branches: ['main']
-    # pull_request:
-    #     branches: ['main']
+    pull_request:
 permissions:
     contents: read
     pages: write
@@ -30,13 +29,10 @@ jobs:
     #     - run: npm install
     #     - run: npm run lint
 
-    build-and-deploy:
-        name: Build & Deploying
+    build:
+        name: Build
         # needs: lint
         runs-on: ubuntu-latest
-        environment:
-            name: github-pages
-            url: ${{ steps.deployment.outputs.page_url }}
         strategy:
             matrix:
                 node-version: [18.18.0]
@@ -51,13 +47,32 @@ jobs:
                   cache: 'npm'
             - run: npm install
             - run: npm run build
+
+    deploy:
+        if: github.ref == 'refs/heads/main'
+        name: Deploying
+        needs: build
+        runs-on: ubuntu-latest
+        strategy:
+            matrix:
+                node-version: [18.18.0]
+        environment:
+            name: github-pages
+            url: ${{ steps.deployment.outputs.page_url }}
+        steps:
             # Avoid fresh page 404 result
             - run: cp dist/index.html dist/404.html
             
-            - name: 🚀 Deploying
+            - name: 🚀 Configuring
               uses: actions/configure-pages@v5
-            - uses: actions/upload-pages-artifact@v4
+              
+            - name: ☁️ Uploading
+              uses: actions/upload-pages-artifact@v4
               with:
                   path: './dist'
-            - uses: actions/deploy-pages@v4
+
+            - name: ⚙️ Deploying Pages
+              uses: actions/deploy-pages@v4
+              
             - run: echo '✅ Success deployed!'
+            
