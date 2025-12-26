@@ -23,9 +23,9 @@ jobs:
     #       node-version: [16.x, 18.x]
     #   steps:
     #     - name: Checkout 🛎️
-    #       uses: actions/checkout@v4
+    #       uses: actions/checkout@v6
     #     - name: Linting
-    #       uses: actions/setup-node@v3
+    #       uses: actions/setup-node@v6
     #       with: ${{ matrix.node-version }}
     #     - run: npm install
     #     - run: npm run lint
@@ -42,9 +42,10 @@ jobs:
                 node-version: [18.18.0]
         steps:
             - name: 🛎️ Checkout
-              uses: actions/checkout@v4
+              uses: actions/checkout@v6
+              
             - name: 🚧 Build with Node.js ${{ matrix.node-version }}
-              uses: actions/setup-node@v3
+              uses: actions/setup-node@v6
               with:
                   node-version: ${{ matrix.node-version }}
                   cache: 'npm'
@@ -52,10 +53,11 @@ jobs:
             - run: npm run build
             # Avoid fresh page 404 result
             - run: cp dist/index.html dist/404.html
+            
             - name: 🚀 Deploying
-              uses: actions/configure-pages@v3
-            - uses: actions/upload-pages-artifact@v2
+              uses: actions/configure-pages@v5
+            - uses: actions/upload-pages-artifact@v4
               with:
                   path: './dist'
-            - uses: actions/deploy-pages@v1
+            - uses: actions/deploy-pages@v4
             - run: echo '✅ Success deployed!'
